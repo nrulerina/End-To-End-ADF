@@ -6,7 +6,7 @@
 		"typeProperties": {
 			"server": "DESKTOP-LGEL5NK\\SQLEXPRESS",
 			"database": "AdventureWorksLT2022",
-			"encrypt": "mandatory",
+			"encrypt": "optional",
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "luke",
