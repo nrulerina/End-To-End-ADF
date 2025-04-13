@@ -1,6 +1,9 @@
 {
 	"name": "SHIR",
 	"properties": {
-		"type": "SelfHosted"
+		"type": "SelfHosted",
+		"typeProperties": {
+			"selfContainedInteractiveAuthoringEnabled": true
+		}
 	}
 }
