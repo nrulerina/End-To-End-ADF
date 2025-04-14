@@ -1,0 +1,17 @@
+{
+	"name": "sp_CreateSQLServerlessView_gold",
+	"properties": {
+		"content": {
+			"query": "USE gold_db\nGO\n\nCREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName nvarchar(100)\nAS \nBEGIN\n    DECLARE @statement VARCHAR(MAX)\n    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + ' AS\n        SELECT\n            *\n        FROM\n            OPENROWSET(\n                BULK ''https://sadataengineeringproj.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',\n                FORMAT = ''DELTA''\n            ) AS [result]'\n\n    EXEC (@statement)\nEND\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
