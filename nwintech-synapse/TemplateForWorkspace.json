@@ -39,6 +39,14 @@
 		"nwintech-synapse-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://nwintechsa.dfs.core.windows.net"
+		},
+		"AzureSqlDatabase_Gold_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "nwintech-synapse-ondemand.sql.azuresynapse.net"
+		},
+		"AzureSqlDatabase_Gold_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "gold_db"
 		}
 	},
 	"variables": {
@@ -548,6 +556,29 @@
 				"type": "SqlQuery"
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureSqlDatabase_Gold')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"server": "[parameters('AzureSqlDatabase_Gold_properties_typeProperties_server')]",
+					"database": "[parameters('AzureSqlDatabase_Gold_properties_typeProperties_database')]",
+					"encrypt": "mandatory",
+					"trustServerCertificate": false,
+					"authenticationType": "SystemAssignedManagedIdentity"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
 		}
 	]
 }
