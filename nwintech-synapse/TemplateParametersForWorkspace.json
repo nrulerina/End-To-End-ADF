@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "nwintech-synapse"
+		},
+		"AzureDataLakeStorageLS_accountKey": {
+			"value": ""
+		},
+		"nwintech-synapse-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:nwintech-synapse.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorageLS_properties_typeProperties_url": {
+			"value": "https://nwintechsa.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://nwintechkv.vault.azure.net/"
+		},
+		"SqlServerOnPremLS_properties_typeProperties_server": {
+			"value": "DESKTOP-LGEL5NK\\SQLEXPRESS"
+		},
+		"SqlServerOnPremLS_properties_typeProperties_database": {
+			"value": "AdventureWorksLT2022"
+		},
+		"SqlServerOnPremLS_properties_typeProperties_userName": {
+			"value": "luke"
+		},
+		"nwintech-synapse-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://nwintechsa.dfs.core.windows.net"
+		}
+	}
+}
