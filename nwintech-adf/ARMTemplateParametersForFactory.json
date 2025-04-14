@@ -11,6 +11,9 @@
 		"AzureDataLakeStorageLS_properties_typeProperties_url": {
 			"value": "https://nwintechsa.dfs.core.windows.net/"
 		},
+		"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
+			"value": "0414-044916-m5wc0l"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://nwintechkv.vault.azure.net/"
 		},

@@ -15,6 +15,10 @@
 			"type": "string",
 			"defaultValue": "https://nwintechsa.dfs.core.windows.net/"
 		},
+		"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0414-044916-m5wc0l"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://nwintechkv.vault.azure.net/"
@@ -66,6 +70,9 @@
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"AzureDatabricksLS_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricksLS_properties_typeProperties_existingClusterId')]"
 					},
 					"SqlServerOnPremLS_properties_typeProperties_server": {
 						"value": "[parameters('SqlServerOnPremLS_properties_typeProperties_server')]"
