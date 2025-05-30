@@ -10,7 +10,7 @@ This project simulates a real-time business scenario and demonstrates how to bui
 
 ## 🎯 Business Goal
 
-The goal is to understand customer demographics—especially gender—and how they impact product sales.
+The goal is to understand customer demographics especially gender and how they impact product sales.
 
 ### Key Requirements:
 - **Sales by Gender & Product Category**
@@ -57,7 +57,7 @@ The dashboard displays:
 - ✅ Total products sold  
 - 💰 Total sales revenue  
 - 👥 Gender distribution  
-- 🎯 Filters for product category, gender, and date
+- 🎯 Filters for product category and gender
 
 ---
 
