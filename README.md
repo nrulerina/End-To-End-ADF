@@ -13,8 +13,8 @@ This project simulates a real-time business scenario and demonstrates how to bui
 The goal is to understand customer demographics especially gender and how they impact product sales.
 
 ### Key Requirements:
-- **Sales by Gender & Product Category**
-- **Interactive Filtering** by category, gender, and date
+- **Sales by Customer Title (Mr, Mrs, Sra) & Product Category**
+- **Interactive Filtering** by category and customer title (Mr, Mrs, Sra)
 - **User-Friendly Dashboard** for stakeholders
 
 ## 🛠️ Solution Summary
@@ -57,7 +57,7 @@ The dashboard displays:
 - ✅ Total products sold  
 - 💰 Total sales revenue  
 - 👥 Gender distribution  
-- 🎯 Filters for product category and gender
+- 🎯 Filters for product category and customer title (Mr, Mrs, Sra)
 
 ---
 
