@@ -14,7 +14,7 @@ The goal is to understand customer demographics especially gender and how they i
 
 ### Key Requirements:
 - **Sales by Customer Title (Mr, Mrs, Sra) & Product Category**
-- **Interactive Filtering** by category and customer title (Mr, Mrs, Sra)
+- **Interactive Filtering** by category and customer title (Mr, Mrs, Sra, Sr)
 - **User-Friendly Dashboard** for stakeholders
 
 ## 🛠️ Solution Summary
