@@ -51,13 +51,18 @@ The goal is to understand customer demographics especially gender and how they i
 | Azure Key Vault       | Secret management                |
 | SQL Server (On-Prem)  | Source database                  |
 
+### 🛠️ Data Pipeline Diagram
+<p align="center">
+  <img src="img/pipeline-diagram.png" alt="Azure Data Engineering Pipeline" width="600"/>
+</p>
+
 ## 📈 Power BI Dashboard
 
 The dashboard displays:
 - ✅ Total products sold  
 - 💰 Total sales revenue  
 - 👥 Gender distribution  
-- 🎯 Filters for product category and customer title (Mr, Mrs, Sra)
+- 🎯 Filters for product category and customer title (Mr, Mrs, Sra, Sr)
 
 ---
 
