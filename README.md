@@ -1,7 +1,7 @@
 # 📊 Azure End-to-End Data Engineering Project
 
 <p align="center">
-  <img src="img/1.png" alt="Azure Data Engineering Project Diagram" width="700"/>
+  <img src="img/1.png" alt="Azure Data Engineering Project Diagram" width="550"/>
 </p>
 
 ## 🚀 Project Overview
