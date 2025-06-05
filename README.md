@@ -44,7 +44,7 @@ The goal is to understand customer demographics especially gender and how they i
 | Tool                  | Purpose                          |
 |-----------------------|----------------------------------|
 | Azure Data Factory    | Data orchestration               |
-| Azure Data Lake       | Raw & processed data storage     |
+| Azure Data Lake Gen 2 | Raw & processed data storage     |
 | Azure Databricks      | Data transformation              |
 | Azure Synapse         | Data warehousing & analytics     |
 | Power BI              | Data visualization               |
